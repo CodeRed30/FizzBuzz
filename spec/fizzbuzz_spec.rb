@@ -19,7 +19,13 @@ describe 'fizzbuzz' do
 end
 
 describe 'fizzbuzz' do
-  it 'return "That was a string you are a fool" when passed a string' do
+  it 'returns "That was a string you are a fool" when passed a string' do
     expect(fizzbuzz("")).to eq 'That was a string you are a fool'
+  end
+end
+
+describe 'fizzbuzz' do
+  it 'returns "That was a float you are a fool" when passed a float' do
+    expect(fizzbuzz(0.1)).to eq 'That was a float you are a fool'
   end
 end
