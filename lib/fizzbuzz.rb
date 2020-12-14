@@ -1,13 +1,9 @@
 def fizzbuzz(number)
-  if number % 15 == 0
-    return 'fizzbuzz'
-  elsif number % 3 == 0
-    return 'fizz'
-  elsif number % 5 == 0
-    return 'buzz'
-  elsif number.is_a?(String)
-    return "That was a string you are a fool"
-  elsif number.is_a?(Float)
-    return "That was a float you are a fool"
+  case
+  when number % 15 == 0 then return 'fizzbuzz'
+  when number % 3 == 0 then return 'fizz'
+  when number % 5 == 0 then return 'buzz'
+  when number.is_a?(String) then return "That was a string you are a fool"
+  when number.is_a?(Float) then return "That was a float you are a fool"
   end
 end
