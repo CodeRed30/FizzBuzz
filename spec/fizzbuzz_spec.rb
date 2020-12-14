@@ -17,3 +17,9 @@ describe 'fizzbuzz' do
     expect(fizzbuzz(15)).to eq 'fizzbuzz'
   end
 end
+
+describe 'fizzbuzz' do
+  it 'return "That was a string you are a fool" when passed a string' do
+    expect(fizzbuzz("")).to eq 'That was a string you are a fool'
+  end
+end
